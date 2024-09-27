@@ -4,3 +4,51 @@
     --cor01: #49a09d;
     --cor02: #5f2c82;
 }
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+} 
+
+body, html {
+    background-color: var(--cor02);
+    height: 100vh;
+    width: 100vw;
+
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;   
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width 0.7s, height 0.7s;  /*transissão na mudança*/
+    transition-timing-function: ease;  /*para ser uma transissão mais suavisada*/
+}
+
+/*  overflow: hidden; ///  serve para esconder qualquer conteúdo que ultrapasse as bordas de um elemento. Ou seja, se algo for maior do que o espaço disponível, essa parte extra não aparecerá. É útil para manter o layout organizado.*/
+
+section#login > div#imagem {
+    display: block;
+    background-color: var(--cor02) ;
+    background-image: url(../imagens/pexels-markusspiske-1089438.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+}

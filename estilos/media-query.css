@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* TYPICAL DEVICE BRACKPOINTS 
+-----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: Acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section#login{
+        width: 90vw;
+    }
+
+    section#login > div#imagem {
+        float: left;   /*quand atingir a medida, a imagem vai flutuar pra esquerda*/
+        width: 30%;   /*sempre colocando largura*/
+        height: 100%;       /*sempre colocando altura*/
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    section#login{
+        width: 950px;
+    }
+
+    section#login > div#imagem {
+        float: left;   
+        width: 50%;   
+        height: 100%;       
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+}
